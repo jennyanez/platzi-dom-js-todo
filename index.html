@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎯 Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main-container">
+        <div id="main-heading">
+            <h1>🎯 Task Manager</h1>
+            <div id="theme-toggle">
+                <button id="toggle-theme-btn" class="light-btn">🌙</button>
+            </div>
+        </div>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add a new task" required>
+            <button type="submit">Add Task</button>
+        </form>
+        <ul id="task-list">
+            <li>
+                <div id="task-content">
+                    <p>Terminar curso de manipulacion del dom</p>
+                    <div class="task-status"></div>
+                </div>
+                <div id="task-buttons">
+                    <button id="edit-task-btn" class="light-btn">✏️</button>
+                    <button id="delete-task-btn" class="light-btn">🗑️</button>
+                    <button id="change-status-btn" class="light-btn">Change Status</button>
+                </div>
+            </li>
+            <li>
+                <div id="task-content" class="completed">
+                    <p>Tomar curso de fundamentos de Javascript</p>
+                    <div class="task-status completed"></div>
+                </div>
+                <div id="task-buttons">
+                    <button id="edit-task-btn" class="light-btn">✏️</button>
+                    <button id="delete-task-btn" class="light-btn">🗑️</button>
+                    <button id="change-status-btn" class="light-btn">Change Status</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

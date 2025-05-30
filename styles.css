@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    background: #F4F4F4;
+    padding: 60px 0;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 100dvh;
+}
+
+/* Main container */
+
+#main-container {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 16px;
+    background: #FFF;
+    padding: 24px 28px;
+    box-shadow:  0px 0px 25px 0px rgba(0, 0, 0, 0.10);
+}
+
+/* Media queries */
+@media (min-width: 375px) and (max-width: 1040px) {
+    #main-container {
+        width: 95%;
+    }
+}
+
+/* Heading */
+
+#main-heading {
+    text-align: center;
+    position: relative;
+}
+
+#main-heading h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#theme-toggle{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#toggle-theme-btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+}
+
+/* Buttons */
+
+.light-btn {
+    border-radius: 8px;
+    background-color: #E0E0E0;
+}
+
+button {
+    border: none;
+    padding: 8px 8px;
+}
+
+/* Form */
+#task-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+#task-input {
+    width: 80%;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #E5E5E5;
+    height: 34px;
+}
+
+#task-form button {
+    width: 20%;
+    background-color: #00B7FF;
+    color: #FFF;
+    border-radius: 8px;
+    font-weight: 500;
+    height: 32px;
+}
+
+/* Task list */
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+#task-list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+}
+
+#task-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F4F4F4;
+    padding: 12px 16px;
+    border-radius: 8px;
+    width: 70%;
+    font-size: 14px;
+}
+
+.task-status {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    background-color: #F6D533;
+}
+
+#task-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 30%;
+}
+
+#task-buttons button {
+    height: 34px;
+
+}
+
+#change-status-btn {
+    font-size: 12px;
+}
+
+li .completed {
+    text-decoration: line-through;
+    color: #A0A0A0;
+}
+
+.task-status.completed {
+    background-color: #33F633;
+}
