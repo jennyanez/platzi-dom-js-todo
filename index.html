@@ -22,29 +22,30 @@
             <button type="submit">Add Task</button>
         </form>
         <ul id="task-list">
-            <li>
-                <div id="task-content">
+            <li class="task-list_task">
+                <div class="task-content">
                     <p>Terminar curso de manipulacion del dom</p>
                     <div class="task-status"></div>
                 </div>
-                <div id="task-buttons">
-                    <button id="edit-task-btn" class="light-btn">✏️</button>
-                    <button id="delete-task-btn" class="light-btn">🗑️</button>
-                    <button id="change-status-btn" class="light-btn">Change Status</button>
+                <div class="task-buttons">
+                    <button class="light-btn edit-task-btn">✏️</button>
+                    <button class="light-btn delete-task-btn">🗑️</button>
+                    <button class="light-btn change-status-btn">✅</button>
                 </div>
             </li>
-            <li>
-                <div id="task-content" class="completed">
+            <li class="task-list_task">
+                <div class="task-content completed">
                     <p>Tomar curso de fundamentos de Javascript</p>
                     <div class="task-status completed"></div>
                 </div>
-                <div id="task-buttons">
-                    <button id="edit-task-btn" class="light-btn">✏️</button>
-                    <button id="delete-task-btn" class="light-btn">🗑️</button>
-                    <button id="change-status-btn" class="light-btn">Change Status</button>
+                <div class="task-buttons">
+                    <button class="light-btn edit-task-btn">✏️</button>
+                    <button class="light-btn delete-task-btn">🗑️</button>
+                    <button class="light-btn change-status-btn">✅</button>
                 </div>
             </li>
         </ul>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
