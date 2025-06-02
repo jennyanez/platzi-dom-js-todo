@@ -151,6 +151,42 @@ li .completed {
     background-color: #33F633;
 }
 
+/* 
+----------------------------
+    DARK THEME STYLES 
+----------------------------
+*/
+body.dark-theme {
+    background: #2E2E2E;
+    color: #F4F4F4;
+}
+
+.dark-theme #main-container {
+    background: #1E1E1E;
+}
+
+.dark-theme .light-btn {
+    background-color: #656565;
+}
+
+.dark-theme #task-input {
+    background-color: #484848;
+}
+
+.dark-theme #task-form button {
+    background-color: #006B95;
+    color: #FFF;
+}
+
+.dark-theme .task-content {
+    background-color: #6A6A6A;
+}
+
+.dark-theme input {
+    color: #F4F4F4;
+}
+
+
 /* Media queries */
 
 @media (min-width: 760px) and (max-width: 1024px) {
