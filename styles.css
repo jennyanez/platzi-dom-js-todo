@@ -151,6 +151,10 @@ li .completed {
     background-color: #33F633;
 }
 
+button:hover {
+    cursor: pointer;
+}
+
 /* 
 ----------------------------
     DARK THEME STYLES 
